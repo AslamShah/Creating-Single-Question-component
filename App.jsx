@@ -3,7 +3,7 @@ import data from './data'
 import SingleQuestion from './Question'
 
 function App() {
-	return ({{{{}}}}
+	return (
 		<main>
 			<div className="container">
 				<h3>FAQ</h3>
