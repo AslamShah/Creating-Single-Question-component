@@ -8,14 +8,15 @@ function App() {
 			<div className="container">
 				<h3>FAQ</h3>
 				<section className="info">
-                 
-  
-
-					<SingleQuestion title="My Question" />
-                     <div>{data.map(data => {
-       return <h5>{data.title}</h5>
-   })}</div>
-
+					{data.map((question) => {
+						return (
+							<SingleQuestion
+								title={question.title}
+                         
+								key={question.id}
+							/>
+						)
+					})}
 				</section>
 			</div>
 		</main>
